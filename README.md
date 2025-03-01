@@ -16,7 +16,7 @@ colima start
 ### 2. Pull LibreTranslate Docker Image and Run it on $LT_PORT
 ```sh
 git clone https://github.com/drsqrt/i18n.git
-cd i18n
+cd i18n/bin
 sudo chmod 755 run.sh
 ./run.sh
 ```
