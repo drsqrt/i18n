@@ -1,6 +1,6 @@
-# i18n
+# i18n using [LibreTranslate](https://github.com/LibreTranslate/LibreTranslate)
 
-# LibreTranslate Setup with Colima & Docker
+## LibreTranslate Setup with Colima & Docker
 
 ## Prerequisites
 - Install [Colima](https://github.com/abiosoft/colima)
@@ -27,7 +27,7 @@ sudo chmod 755 run.sh
 ### 4. Test API with cURL
 ```sh
 curl -X POST "http://localhost:5050/translate" -H "Content-Type: application/json" \
--d '{"q": "Hello", "source": "en", "target": "ja"}'
+-d '{"q": "Hello", "source": "en", "target": "hi"}'
 ```
 
 
