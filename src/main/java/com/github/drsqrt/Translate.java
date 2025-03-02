@@ -1,12 +1,15 @@
 package com.github.drsqrt;
 
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
-import org.json.JSONObject;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Translate {
 
@@ -17,23 +20,24 @@ public class Translate {
   @SuppressWarnings("JavadocLinkAsPlainText")
   private static final String API_URL = "http://localhost:5051/translate";
   private static final OkHttpClient client = new OkHttpClient();
+  private static final Logger logger = Logger.getLogger(Translate.class.getName());
 
   public static void main(String[] args) {
     String textToTranslate = "Hello, how are you?";
 
-    translateText(textToTranslate, "ja"); // Japanese
-    translateText(textToTranslate, "hi"); // Hindi
-    /*translateText(textToTranslate, "de");*/ // German
+    Translate translate = new Translate();
+    translate.translateText(textToTranslate, "hi");
+    translate.translateText(textToTranslate, "ja");
   }
 
-  private static void translateText(String text, String targetLanguage) {
+  public String translateText(String text, String targetLanguage) {
     try {
-      JSONObject jsonBody = new JSONObject();
-      jsonBody.put("q", text);
-      jsonBody.put("source", "en");
-      jsonBody.put("target", targetLanguage);
-      jsonBody.put("format", "text");
-      RequestBody body = RequestBody.create(jsonBody.toString(),
+      JsonObject jsonObject = new JsonObject();
+      jsonObject.addProperty("q", text);
+      jsonObject.addProperty("source", "en");
+      jsonObject.addProperty("target", targetLanguage);
+      jsonObject.addProperty("format", "text");
+      RequestBody body = RequestBody.create(jsonObject.toString(),
         MediaType.get("application/json; charset=utf-8"));
       Request request = new Request.Builder()
         .url(API_URL)
@@ -41,16 +45,19 @@ public class Translate {
         .addHeader("Content-Type", "application/json")
         .build();
 
-      Response response = client.newCall(request).execute();
-      if (response.isSuccessful() && response.body() != null) {
-        String responseBody = response.body().string();
-        System.out.println("Translated (" + targetLanguage + "): " + responseBody);
-      } else {
-        System.out.println("Translation failed: " + response.code());
+      try (Response response = client.newCall(request).execute()) {
+        if (response.isSuccessful() && response.body() != null) {
+          JsonObject jsonResponse = JsonParser.parseString(response.body().string()).getAsJsonObject();
+          String translatedText = jsonResponse.get("translatedText").getAsString();
+          logger.info("Translated (" + targetLanguage + "): " + translatedText);
+          return translatedText;
+        }
+        logger.log(Level.WARNING, "Translation failed with status: " + response.code());
+        return "404";
       }
-      response.close();
     } catch (Exception e) {
-      e.printStackTrace();
+      logger.log(Level.SEVERE, "Error occurred while translating text: " + e.getMessage(), e);
+      return "404";
     }
   }
 }

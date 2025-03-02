@@ -1,0 +1,305 @@
+{
+  "bundleName": "english",
+  "values": [
+    {
+      "key": "Hello",
+      "translation": {
+        "en": "Hello!"
+      }
+    },
+    {
+      "key": "GoodMorning",
+      "translation": {
+        "en": "Good morning!"
+      }
+    },
+    {
+      "key": "GoodNight",
+      "translation": {
+        "en": "Good night!"
+      }
+    },
+    {
+      "key": "HowAreYou",
+      "translation": {
+        "en": "How are you?"
+      }
+    },
+    {
+      "key": "ThankYou",
+      "translation": {
+        "en": "Thank you!"
+      }
+    },
+    {
+      "key": "Welcome",
+      "translation": {
+        "en": "You're welcome!"
+      }
+    },
+    {
+      "key": "SeeYouSoon",
+      "translation": {
+        "en": "See you soon!"
+      }
+    },
+    {
+      "key": "TakeCare",
+      "translation": {
+        "en": "Take care!"
+      }
+    },
+    {
+      "key": "WhatAreYouDoing",
+      "translation": {
+        "en": "What are you doing?"
+      }
+    },
+    {
+      "key": "LetsGo",
+      "translation": {
+        "en": "Let's go!"
+      }
+    },
+    {
+      "key": "CallMeBack",
+      "translation": {
+        "en": "Call me back."
+      }
+    },
+    {
+      "key": "WhereAreYou",
+      "translation": {
+        "en": "Where are you?"
+      }
+    },
+    {
+      "key": "GoodLuck",
+      "translation": {
+        "en": "Good luck!"
+      }
+    },
+    {
+      "key": "HaveANiceDay",
+      "translation": {
+        "en": "Have a nice day!"
+      }
+    },
+    {
+      "key": "WhatsYourName",
+      "translation": {
+        "en": "What's your name?"
+      }
+    },
+    {
+      "key": "NiceToMeetYou",
+      "translation": {
+        "en": "Nice to meet you!"
+      }
+    },
+    {
+      "key": "SeeYouTomorrow",
+      "translation": {
+        "en": "See you tomorrow!"
+      }
+    },
+    {
+      "key": "HappyBirthday",
+      "translation": {
+        "en": "Happy birthday!"
+      }
+    },
+    {
+      "key": "MerryChristmas",
+      "translation": {
+        "en": "Merry Christmas!"
+      }
+    },
+    {
+      "key": "HappyNewYear",
+      "translation": {
+        "en": "Happy New Year!"
+      }
+    },
+    {
+      "key": "WhereIsTheBathroom",
+      "translation": {
+        "en": "Where is the bathroom?"
+      }
+    },
+    {
+      "key": "CanYouHelpMe",
+      "translation": {
+        "en": "Can you help me?"
+      }
+    },
+    {
+      "key": "ImHungry",
+      "translation": {
+        "en": "I'm hungry!"
+      }
+    },
+    {
+      "key": "ImThirsty",
+      "translation": {
+        "en": "I'm thirsty!"
+      }
+    },
+    {
+      "key": "WhatsForDinner",
+      "translation": {
+        "en": "What's for dinner?"
+      }
+    },
+    {
+      "key": "IAmLost",
+      "translation": {
+        "en": "I am lost."
+      }
+    },
+    {
+      "key": "HowMuchIsThis",
+      "translation": {
+        "en": "How much is this?"
+      }
+    },
+    {
+      "key": "MyInternetIsSlow",
+      "translation": {
+        "en": "My internet is slow."
+      }
+    },
+    {
+      "key": "PleaseDontCrash",
+      "translation": {
+        "en": "Please don't crash."
+      }
+    },
+    {
+      "key": "IAmTooLazyToMove",
+      "translation": {
+        "en": "I am too lazy to move."
+      }
+    },
+    {
+      "key": "WhyIsMondaySoFarFromFriday",
+      "translation": {
+        "en": "Why is Monday so far from Friday?"
+      }
+    },
+    {
+      "key": "IWasntTalkingToYouSiri",
+      "translation": {
+        "en": "I wasn't talking to you, Siri."
+      }
+    },
+    {
+      "key": "MyBrainHasLeftTheChat",
+      "translation": {
+        "en": "My brain has left the chat."
+      }
+    },
+    {
+      "key": "IAmNotArguingIAmJustExplaining",
+      "translation": {
+        "en": "I am not arguing, I am just explaining."
+      }
+    },
+    {
+      "key": "SarcasmLoading",
+      "translation": {
+        "en": "Sarcasm loading..."
+      }
+    },
+    {
+      "key": "AlexaDoMyHomework",
+      "translation": {
+        "en": "Alexa, do my homework."
+      }
+    },
+    {
+      "key": "IAmOnACoffeeBreakForever",
+      "translation": {
+        "en": "I am on a coffee break... forever."
+      }
+    },
+    {
+      "key": "IfLifeGivesYouLemonsMakeCoffee",
+      "translation": {
+        "en": "If life gives you lemons, make coffee."
+      }
+    },
+    {
+      "key": "NetflixAsksAreYouStillWatching",
+      "translation": {
+        "en": "Netflix asks, 'Are you still watching?'"
+      }
+    },
+    {
+      "key": "IHaveTooManyTabsOpenInMyBrain",
+      "translation": {
+        "en": "I have too many tabs open in my brain."
+      }
+    },
+    {
+      "key": "SleepingIsMySuperpower",
+      "translation": {
+        "en": "Sleeping is my superpower."
+      }
+    },
+    {
+      "key": "WhyDoMeetingsFeelLikeEternity",
+      "translation": {
+        "en": "Why do meetings feel like eternity?"
+      }
+    },
+    {
+      "key": "CodingIsLikeMagicButWithBugs",
+      "translation": {
+        "en": "Coding is like magic, but with bugs."
+      }
+    },
+    {
+      "key": "IAmNotLazyJustEnergyEfficient",
+      "translation": {
+        "en": "I am not lazy, just energy efficient."
+      }
+    },
+    {
+      "key": "LifeIsTooShortForBadCoffee",
+      "translation": {
+        "en": "Life is too short for bad coffee."
+      }
+    },
+    {
+      "key": "WiFiSignalStrongerThanMyWillpower",
+      "translation": {
+        "en": "My WiFi signal is stronger than my willpower."
+      }
+    },
+    {
+      "key": "IWishNapTimeWasMandatory",
+      "translation": {
+        "en": "I wish nap time was mandatory."
+      }
+    },
+    {
+      "key": "WhyDoPasswordsNeedUppercaseLowercaseAndMyFirstBorn",
+      "translation": {
+        "en": "Why do passwords need uppercase, lowercase, and my firstborn?"
+      }
+    },
+    {
+      "key": "SaveMe",
+      "translation": {
+        "en": "Save for the next time?"
+      }
+    },
+    {
+      "key": "TranslateMe",
+      "translation": {
+        "en": "Are you sure you want to translate?"
+      }
+    }
+  ]
+}
