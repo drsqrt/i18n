@@ -89,11 +89,19 @@ environment_check(){
 }
 
 environment_check
-#docker run -ti --rm -p $LT_PORT:$LT_PORT $DB_VOLUME -v lt-local:/home/libretranslate/.local libretranslate/libretranslate ${ARGS[@]}
 
+#docker run -ti --rm -p $LT_PORT:$LT_PORT $DB_VOLUME -v lt-local:/home/libretranslate/.local libretranslate/libretranslate ${ARGS[@]}
+: '
 docker run -ti --rm \
-  -p 5050:$LT_PORT \
+  -p 5050:5000 \
   $DB_VOLUME \
   -v lt-local:/home/libretranslate/.local \
   -e LT_LOAD_ONLY="en,ja,hi" \
+  libretranslate/libretranslate
+'
+
+docker run -ti --rm \
+  -p 5051:5000 \
+  -v lt-local:/home/libretranslate/.local \
+  -e LT_LOAD_ONLY="en,hi,es" \
   libretranslate/libretranslate ${ARGS[@]}
