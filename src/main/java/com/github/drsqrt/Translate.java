@@ -15,7 +15,7 @@ public class Translate {
    * https://translate.flossboxin.org.in/translate, https://libretranslate.com/translate
    */
   @SuppressWarnings("JavadocLinkAsPlainText")
-  private static final String API_URL = "http://localhost:5050/translate";
+  private static final String API_URL = "http://localhost:5051/translate";
   private static final OkHttpClient client = new OkHttpClient();
 
   public static void main(String[] args) {

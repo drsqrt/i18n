@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 
 public class AsyncTranslate {
 
-  private static final String API_URL = "http://localhost:5050/translate";
+  private static final String API_URL = "http://localhost:5051/translate";
   private static final OkHttpClient client = new OkHttpClient();
   private static final ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
 
